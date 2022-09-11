@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
-:root {
+.themeUm:root {
 
     --bkg: hsl(0, 0%, 90%);
     --bkgTeclado: hsl(0, 5%, 81%);
@@ -16,7 +16,67 @@
 
     --white: white;
     --text: hsl(60, 10%, 19%);
+
+    --corDel: white;
+    --corReset: white;
+    --corIgual: white;
+
+    --corFonteVisor: hsl(60, 10%, 19%);
+    --headerFontCor:  hsl(60, 10%, 19%);
+
     --font-family: 'League Spartan', sans-serif;
+}
+.themeDois:root{
+    --bkg:  hsl(222, 26%, 31%);
+    --bkgTeclado: hsl(223, 31%, 20%);
+    --bkgVisor:  hsl(224, 36%, 15%);
+
+    --bkgTeclaF:  hsl(225, 21%, 49%);
+    --shadowTeclaF: hsl(224, 28%, 35%);
+
+    --bkgteclaClick: hsl(6, 63%, 50%);
+    --shadowTeclaClick:hsl(6, 70%, 34%);
+
+    --bkgTecla:  hsl(30, 25%, 89%);
+    --shadowTecla: hsl(28, 16%, 65%);
+
+    --text:hsl(221, 14%, 31%);
+    --white: white;
+
+    --corDel: white;
+    --corReset: white;
+    --corIgual: white;
+
+    --corFonteVisor: white;
+    --headerFontCor: white;
+
+
+    --font-family: 'League Spartan', sans-serif;
+    
+}
+.themeTres:root{
+    --bkg: hsl(268, 75%, 9%);
+    --bkgTeclado: hsl(268, 71%, 12%);
+    --bkgVisor: hsl(268, 71%, 12%);
+
+    --bkgTeclaF:hsl(281, 89%, 26%);
+    --shadowTeclaF:  hsl(285, 91%, 52%);
+
+    --bkgteclaClick: hsl(176, 100%, 44%);
+    --shadowTeclaClick: hsl(177, 92%, 70%);
+
+    --bkgTecla: hsl(268, 47%, 21%);
+    --shadowTecla:hsl(290, 70%, 36%);
+
+    --lightYellow: hsl(52, 100%, 62%);
+    --white: white;
+    --text:hsl(52, 100%, 62%);
+    --font-family: 'League Spartan', sans-serif;
+
+    --corDel: white;
+    --corReset: white;
+    --corIgual: hsl(268, 47%, 21%); ;
+
 }
 .box-theme{
     width: 60px;
@@ -82,6 +142,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
+    color: var(--headerFontCor);
 }
 .header h1{
     font-size: 2rem;
@@ -104,6 +165,7 @@ body {
     width: 90%;
     height: 5rem;
     background-color: var(--bkgVisor);
+    color: var(--corFonteVisor);
     border-radius: 8px;
 }
 .visor__value{
@@ -135,13 +197,13 @@ body {
     grid-column: 1 / 3;
     background-color: var(--bkgTeclaF);
     border-bottom: 4px solid var(--shadowTeclaF);
-    color: var(--white);
+    color: var(--corReset);
   
 }
 .tecla:nth-child(4){
     background-color: var(--bkgTeclaF);
     border-bottom: 4px solid var(--shadowTeclaF);
-    color: var(--white);
+    color: var(--corDel);
 }
 
 .tecla:nth-child(18) {
@@ -149,10 +211,10 @@ body {
     grid-column: 3 / 5;
     background-color: var(--bkgteclaClick);
     border-bottom: 4px solid var(--shadowTeclaClick);
-    color: var(--white);
+    color: var(--corIgual);
 }
 
-.tecla input {
+.teclado__input {
 
     outline: none;
     border: none;
@@ -166,6 +228,7 @@ body {
     font-weight: 700;
     font-family: var(--font-family);
 }
+
 .tecla input::-webkit-inner-spin-button,.tecla input::-webkit-outer-spin-button{
     -webkit-appearance: none;
     margin: 0;
