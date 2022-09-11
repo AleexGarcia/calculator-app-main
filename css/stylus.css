@@ -1,62 +1,132 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-*{
-    box-sizing: border-box;
-}
-body{
-    height: 100vh;
- 
-}
-.header{
-    padding: 2rem 0 ;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+:root {
+
+    --bkg: hsl(0, 0%, 90%);
+    --bkgTeclado: hsl(0, 5%, 81%);
+    --bkgVisor: hsl(0, 0%, 93%);
+
+    --bkgTeclaF: hsl(185, 42%, 37%);
+    --shadowTeclaF: hsl(185, 58%, 25%);
+
+    --bkgteclaClick: hsl(25, 98%, 40%);
+    --shadowTeclaClick: hsl(25, 99%, 27%);
+
+    --bkgTecla: hsl(45, 7%, 89%);
+    --shadowTecla: hsl(35, 11%, 61%);
+
+    --white: white;
+    --text: hsl(60, 10%, 19%);
+    --font-family: 'League Spartan', sans-serif;
 }
 
-#visor{
-  
-    width: 90%;
-    height: 2rem;
+
+* {
+    box-sizing: border-box;
 }
-.container{
-    max-width: 92%;
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bkg);
+    color: var(--text);
+    height: 100vh;
+    font-weight: 700;
+}
+.container {
+    max-width: 90%;
     margin: 0 auto;
 }
-.teclado{
+
+.header {
+    padding: 2rem 0;
+}
+.header h1{
+    font-size: 2rem;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 2rem ;
+}
+
+.visor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2rem;
+    width: 90%;
+    height: 5rem;
+    background-color: var(--bkgVisor);
+    border-radius: 8px;
+}
+.visor__value{
+    font-size: 2rem;
+}
+
+.teclado {
+    width: 90%;
     display: grid;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
-    gap:1rem;
-    grid-template-rows: repeat(5, 20vw);
-    background-color: gray;
+    gap: 1rem;
+    grid-template-rows: repeat(5, 15.4vw);
+    background-color: var(--bkgTeclado);
     border-radius: 1rem;
 }
-label{
+
+label {
     border-radius: 6px;
     width: 100%;
     height: 100%;
-    border-bottom: 4px solid black;
-    background-color: white;
+    border-bottom: 4px solid var(--shadowTecla);
+    background-color: var(--bkgTecla);
 }
-label:nth-child(17){
+
+label:nth-child(17) {
     grid-row: 5 / 6;
     grid-column: 1 / 3;
-    background-color: aqua;
-    color: white;
+    background-color: var(--bkgTeclaF);
+    border-bottom: 4px solid var(--shadowTeclaF);
+    color: var(--white);
+  
 }
-label:nth-child(18){
+label:nth-child(4){
+    background-color: var(--bkgTeclaF);
+    border-bottom: 4px solid var(--shadowTeclaF);
+    color: var(--white);
+}
+
+label:nth-child(18) {
     grid-row: 5 / 6;
     grid-column: 3 / 5;
-    background-color:orange;
-    color: white;
+    background-color: var(--bkgteclaClick);
+    border-bottom: 4px solid var(--shadowTeclaClick);
+    color: var(--white);
 }
-.tecla input{
+
+.tecla input {
     outline: none;
     border: none;
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 6px;
     background-color: inherit;
     color: inherit;
+    font-weight: 700;
+    font-family: var(--font-family);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }

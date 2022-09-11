@@ -1,60 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/stylus.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Calculator app</title>
 </head>
+
 <body>
   <header class="header container">
-    <h1 class="header__title"></h1>
-    <nav class="header__theme">
-      <span class="header__span"></span>
-      <div class="switch-box">
-        <div>
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-        </div>
-        <div>
-          <button></button>
-          <button></button>
-          <button></button>
-        </div>
-      </div>
-    </nav>
+    <h1 class="header__title">calc</h1>
   </header>
-  <main class="container">
-    <section class="visor"><div id="visor">2</div></section>
-    <section class="teclado container">
-      <label for="" class="tecla"><input type="number" name="" id="" value="7" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="number" name="" id="" value="8" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="number" name="" id="" value="9" readonly="readonly"></label>
-      <label for="" class="tecla del"><input type="text" name="" id="" value="DEL" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="number" name="" id="" value="4" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="number" name="" id="" value="5" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="number" name="" id="" value="6" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="text" name="" id="" value="+" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="number" name="" id="" value="1" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="number" name="" id="" value="2" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="number" name="" id="" value="3" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="text" name="" id="" value="-" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="text" name="" id="" value="." readonly="readonly"></label>
-      <label for="" class="tecla"><input type="number" name="" id="" value="0" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="text" name="" id="" value="/" readonly="readonly"></label>
-      <label for="" class="tecla"><input type="text" name="" id="" value="x" readonly="readonly"></label>
-      <label for="" class="tecla reset"><input type="text" name="" id="" value="RESET" readonly="readonly"></label>
-      <label for="" class="tecla resultado"><input type="text" name="" id="" value="=" readonly="readonly"></label>
+  <main class="">
+    <section class="calculadora">
+      <div class="visor">
+          <span class="visor__value">399,9981</span>
+      </div>
+      <div class="teclado">
+        <label for="sete" class="tecla"><input type="number" name="" id="sete" value="7" data-tipo="numerico"
+            readonly="readonly"></label>
+        <label for="oito" class="tecla"><input type="number" name="" id="oito" value="8" data-tipo="numerico"
+            readonly="readonly"></label>
+        <label for="nove" class="tecla"><input type="number" name="" id="nove" value="9" data-tipo="numerico"
+            readonly="readonly"></label>
+        <label for="delete" class="tecla del"><input type="text" name="" id="delete" data-tipo="funcional" value="DEL"
+            readonly="readonly"></label>
+        <label for="quatro" class="tecla"><input type="number" name="" id="quatro" value="4" data-tipo="numerico"
+            readonly="readonly"></label>
+        <label for="cinco" class="tecla"><input type="number" name="" id="cinco" value="5" data-tipo="numerico"
+            readonly="readonly"></label>
+        <label for="seis" class="tecla"><input type="number" name="" id="seis" value="6" data-tipo="numerico"
+            readonly="readonly"></label>
+        <label for="mais" class="tecla"><input type="text" name="" id="mais" value="+" data-tipo="funcional"
+            readonly="readonly"></label>
+        <label for="um" class="tecla"><input type="number" name="" id="um" value="1" data-tipo="numerico" readonly="readonly"></label>
+        <label for="dois" class="tecla"><input type="number" name="" id="dois" value="2" data-tipo="numerico"
+            readonly="readonly"></label>
+        <label for="tres" class="tecla"><input type="number" name="" id="tres" value="3" data-tipo="numerico"
+            readonly="readonly"></label>
+        <label for="menos" class="tecla"><input type="text" name="" id="menos" value="-" data-tipo="funcional"
+            readonly="readonly"></label>
+        <label for="virgula" class="tecla"><input type="text" name="" id="virgula" value="." data-tipo="funcional"
+            readonly="readonly"></label>
+        <label for="zero" class="tecla"><input type="number" name="" id="zero" value="0" data-tipo="numerico"
+            readonly="readonly"></label>
+        <label for="divisao" class="tecla"><input type="text" name="" id="divisao" value="/" data-tipo="funcional"
+            readonly="readonly"></label>
+        <label for="multiplicacao" class="tecla"><input type="text" name="" id="multiplicacao" value="x"
+            data-tipo="funcional" readonly="readonly"></label>
+        <label for="reset" class="tecla reset"><input type="text" name="" id="reset" value="RESET" data-tipo="funcional"
+            readonly="readonly"></label>
+        <label for="resultado" class="tecla resultado"><input type="text" name="" id="resultado" value="="
+            data-tipo="funcional" readonly="readonly"></label>
+      </div>
     </section>
+
   </main>
 
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
