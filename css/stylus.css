@@ -130,3 +130,22 @@ label:nth-child(18) {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+@media screen and (min-width: 500px) {
+    .calculadora{
+        width: 400px;
+        margin: 0 auto;
+        height: 600px;
+    }
+    .teclado{
+        grid-template-rows: repeat(5,1fr);
+        height: 100%;
+    }
+    .header.container{
+        width: 400px;
+
+    }
+    .teclado,.visor{
+        width: 100%;
+    }   
+}
