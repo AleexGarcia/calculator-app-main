@@ -140,7 +140,7 @@ label:nth-child(18) {
     .calculadora{
         width: 400px;
         margin: 0 auto;
-        height: 600px;
+        height: 550px;
     }
     .teclado{
         grid-template-rows: repeat(5,1fr);
