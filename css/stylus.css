@@ -24,6 +24,7 @@
     --corFonteVisor: hsl(60, 10%, 19%);
     --headerFontCor:  hsl(60, 10%, 19%);
 
+   
     --font-family: 'League Spartan', sans-serif;
 }
 .themeDois:root{
@@ -253,9 +254,13 @@ body {
         grid-template-rows: repeat(5,1fr);
         height: 100%;
     }
+    .tecla:hover{
+        opacity: .9;
+    }
     .tecla input:hover{
         
         cursor: pointer;
+       
     }
     .header.container{
         padding: 2rem 0 2rem 0;

@@ -72,5 +72,4 @@ temas.addEventListener('input', e => {
         html.classList.remove('themeUm')
     }
 
-
 })
