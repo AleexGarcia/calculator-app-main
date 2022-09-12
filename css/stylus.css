@@ -168,6 +168,7 @@ body {
     background-color: var(--bkgVisor);
     color: var(--corFonteVisor);
     border-radius: 8px;
+    overflow: auto;
 }
 .visor__value{
     font-size: 2rem;
